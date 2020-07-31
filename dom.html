@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<style>
+
+  :root{
+    --yellow-color: #F7DF1E;
+    --dark-color: #222;
+  }
+  .cards{
+    border: thin solid var(--dark-color);
+    padding:1rem;
+  }
+  .card{
+    display: inline-block;
+    background-color: var(--dark-color);
+    color: var(--yellow-color)
+  }
+  .card figcaption{
+  padding: 1rem;
+  }
+  .rotate-45{
+    transform: rotate(45deg);
+  }
+  .rotate-135{
+    transform: rotate(135deg);
+  }
+  .eventos-flujo div{
+    padding: 4rem;
+    font-size: 2rem;
+    text-align: center;
+  }
+  .uno{
+    background-color: yellow;
+  }
+  .dos{
+    background-color: gold;
+  }
+  .tres{
+    background-color: lightyellow;
+  }
+</style>
+<body>
+
+  <h1>DOM</h1>    
+
+  <br>
+
+  <h3>Manejo del dom</h3>
+
+  <p id="que-es">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. In ab iure consequatur, ratione nisi dolores? Minus neque facilis quae rerum numquam velit ipsum eaque eos, distinctio suscipit consequatur, esse unde?
+    Quasi laborum odio tenetur nemo vel vitae corrupti cum quam reiciendis, quia nulla ducimus possimus, asperiores ipsum rem expedita cupiditate obcaecati sunt eaque suscipit. Saepe, reiciendis. Ut tempore minus placeat?
+    Nihil temporibus maiores odio ad debitis qui illo aut tempore suscipit similique natus excepturi veniam, perspiciatis ipsum dolor totam? Nesciunt nam quae iste atque blanditiis, minima veniam sit accusamus quia.
+    Eos tempore repellendus, velit provident fugit eius, ipsam omnis at, rerum repudiandae voluptate sint ratione earum consequuntur. Repudiandae quaerat facere cum beatae consectetur et illo recusandae laudantium, quasi atque. Ex!
+  </p>
+
+  <nav id="menu">
+    <ul>
+      <li><a href="#">Sección 5</a></li>
+      <li><a href="#">Sección 4</a></li>
+      <li><a href="#">Sección 3</a></li>
+      <li><a href="#">Sección 2</a></li>
+      <li><a href="#">Sección 1</a></li>
+    </ul>
+  </nav>
+
+  <input type="text" name="nombre" placeholder="nombre">
+  <a href="dom.html" class="link-dom"></a>
+  
+  <section class="cards">
+    <figure class="card"><img src="https://placeimg.com/200/200/tech" alt="tech"> 
+      <figcaption>tech</figcaption> 
+    </figure>
+    <figure class="card"><img src="https://placeimg.com/200/200/nature" alt="nature"> 
+      <figcaption>nature</figcaption> 
+    </figure>
+    <figure class="card"><img src="https://placeimg.com/200/200/arch" alt="arch"> 
+      <figcaption>arch</figcaption> 
+    </figure>
+    <figure class="card"><img src="https://placeimg.com/200/200/people" alt="people"> 
+      <figcaption>people</figcaption> 
+    </figure>
+    <figure class="card"><img src="https://placeimg.com/200/200/animals" alt="animals">
+       <figcaption>animals</figcaption> 
+      </figure>
+  </section>
+  
+  <template id="template-card">
+    <figure class="card">
+      <img>
+      <figcaption></figcaption>
+    </figure>
+  </template>
+
+  <h3>Eventos en Javascript</h3>
+  <h4>Manejadores de eventos</h4>
+
+  <!--manera no recomendada-->
+  <button onclick="holaMundo()" >Evento con atributo HTML</button>
+  <br><br>
+  <button id="evento-semantico">Evento con manejador semántico</button>
+  <br><br>
+  <button id="evento-multiple">Evento con múltiples funciones</button>
+  <br><br>
+  <button id="evento-remover">Removiendo eventos con manejadores de múltiples</button>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <h4>Flujo de Eventos</h4>
+  
+  <section class="eventos-flujo">
+    <div class="uno">
+      1
+      <div class="dos">
+        2
+        <div class="tres">
+          3
+          <a href="https://jonmircha.com/" target="_blank" rel="noopener">jonmircha.com</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <h3 style="width : 2000px" >Manejo del BOM</h3>
+  <br><br>
+  <button id="abrir-ventana">Abrir ventanta</button>
+  <br><br>
+  <button id="cerrar-ventana">Cerrar ventanta</button>
+  <br><br>
+  <button id="imprimir-ventana">Imprimir ventana</button>
+  <br><br>
+  <br><br>
+
+
+<script src="js/dom.js"></script>
+</body>
+</html>
