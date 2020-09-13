@@ -1,2 +1,3 @@
-# js-widget
-Creación de widgets para su utilización en la web con Javascript.
+# Creación de widgets reutilizables con JS
+- Demo : https://horaciocalleja.github.io/js-widgets/
+
