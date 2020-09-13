@@ -11,9 +11,9 @@ import formValidation from "./form_validation.js";
 const d = document;
 
 const responsiveObj = {
-  yt_d : `<iframe width="560" height="315" src="https://www.youtube.com/embed/6IwUl-4pAzc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`,
+  yt_d : `<iframe width="560" height="315" src="https://www.youtube.com/watch?v=ajABt8KCho8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`,
   gm_d : `<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3286.426695569784!2d-58.4623338843366!3d-34.54275028047532!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb58ba24ecf55%3A0x24ade018f9224973!2smonumental!5e0!3m2!1ses-419!2sar!4v1595257379500!5m2!1ses-419!2sar" width="600" height="450" frameborder="0"></iframe>`,
-  yt_m : `<a href="https://www.youtube.com/embed/6IwUl-4pAzc" target="_blank" rel="noopener noreferrer" >Ir al video</a>`,
+  yt_m : `<a href="https://www.youtube.com/watch?v=ajABt8KCho8" target="_blank" rel="noopener noreferrer" >Ir al video</a>`,
   gm_m: `<a href="https://goo.gl/maps/rFg55Z571GdYu5G46" target="_blank" rel="noopener noreferrer"  > Ir a google maps </a>`
 };
 
